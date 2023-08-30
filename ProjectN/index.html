@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop form from coding to night</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    
+    <div class="overlay">
+        <div class="wrapper">
+            <a href="#" class="close">&times;</a>
+            <div class="column details">
+                <div class="signin">
+                    <h1>Sign in</h1>
+                    <input type="email" placeholder="Username">
+                    <input type="password" placeholder="password">
+                    <a href="forget password"></a>
+                    <button class="form-submit">Sign in</button>
+                    <span>You don't have an account yet?
+                        <button id="signup">
+                            create it now!
+
+                        </button>
+                    </span>
+                </div>
+                <div class="signup">
+                    <h1>Sign up</h1>
+                    <input type="name" placeholder="Full name">
+                    <input type="email" placeholder="Username">
+                    <input type="password" placeholder="Password">
+
+                    <button class="form-submit">Sign In</button>
+                    <span>Already have account?
+                        <button id="signin">
+                            Sign in
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="column content">
+                <div class="signin">
+                    <h1>welcome back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+
+                </div>
+                <div class="signup">
+                    <h1>Hello friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script >
+        $('.signup').hide();
+        $('#signin, #signup').on(
+            'click',
+            function(){
+                $('.signin, .signup').toggle()
+            }
+        )
+
+    </script>
+
+     
+
+
+
+
+
+
+</body>
+
+</html>
